@@ -8,7 +8,7 @@ Uses the [Nomie API][api] under the hood.
 
 ## Installation
 
-Copy `nomie-log.py` somewhere.
+Copy `nomie-log.py` somewhere. Required Python 3.5+
 
 ## Setup
 
