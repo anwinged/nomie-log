@@ -23,7 +23,7 @@ def main():
             return
         contents = Path(f.name).read_text('utf-8')
         if not contents:
-            print('Exit, note content is empty')
+            print('Exit, note contents is empty')
             return
         send_note(contents)
         print('Done')
@@ -46,7 +46,7 @@ def send_note(contents):
 def require_env(name):
     val = os.environ.get(name)
     if val is None:
-        print('Env {} is required', name)
+        print('Env variable is required:', name)
         sys.exit(1)
     return str(val)
 
