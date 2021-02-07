@@ -17,7 +17,7 @@ NOMIE_LOG_URL = 'https://nomieapi.com/log'
 def main():
     with NamedTemporaryFile('w+b') as f:
         editor = require_env(NOMIE_LOG__EDITOR)
-        res = subprocess.run([editor, '-softwrap', 'true', f.name])
+        res = subprocess.run([editor, f.name])
         if res.returncode != 0:
             print('Editor ends with non zero code:', res.returncode)
             return
